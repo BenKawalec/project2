@@ -1,0 +1,30 @@
+<div class="container-fluid text-center">
+    <h2>User Information</h2>
+    <p>Current Weight:</p> 
+        <p>{{currentWeight}} lbs</p>
+        
+       
+    <p>Goal Weight: 
+        {{goalWeight}} lbs</p>
+        
+      
+      
+</div>
+<br><br>
+<div class="container-fluid text-center">
+    <h2>Workouts</h2>
+    {{#each workouts as |workout|}}
+    <div>
+        <h3>{{workouts.workoutName}}</h3>
+        <div>
+            <h4>{{exOne}}</h4>
+            <h4>{{exTwo}}</h4>
+            <h4>{{exThree}}</h4>
+            <h4>{{exFour}}</h4>
+            <h4>{{exFive}}</h4>
+        </div>
+    </div>
+    {{/each}}
+    
+</div>
+<script src="./js/login.js"></script>

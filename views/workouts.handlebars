@@ -1,0 +1,53 @@
+<div class="continer-fluid text-center">
+    <h2 class="text-decoration-underline">Workouts</h2> <br>
+</div>
+
+<div class="container-fluid text-center">
+    <h3 class="text-decoration-underline">Add Workout</h3> <br>
+    <div class="continer-fluid text-center">
+        <form class = "form workout-form">
+            <div>
+                <label for="workoutName" class="form-label">Workout Name</label>
+                <input type="text" id="workoutName" name="workoutName" class="form-control">
+            </div>
+            <div>
+                <label for="exOne" class="form-label">Exercise One</label>
+                <input type="text" class="form-control" id="exOne">
+            </div>
+            <div>
+                <label for="exTwo" class="form-label">Exercise Two</label>
+                <input type="text" class="form-control" id="exTwo">
+            </div>
+            <div>
+                <label for="exThree" class="form-label">Exercise Three</label>
+                <input type="text" class="form-control" id="exThree">
+            </div>
+            <div>
+                <label for="exFour" class="form-label">Exercise Four</label>
+                <input type="text" class="form-control" id="exFour">
+            </div>
+            <div>
+                <label for="exFive" class="form-label">Exercise Five</label>
+                <input type="text" class="form-control" id="exFive">
+            </div> <br>
+            <button type="submit" id="workout" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div> <br>
+
+<div class="container-fluid text-center">
+    <h3 class="text-decoration-underline">Added Workouts</h3>
+    {{#each workouts as |workout|}}
+    <div>
+        <h3>{{workout.workoutName}}</h3>
+        <ul>
+            <li>{{exOne}}</li>
+            <li>{{exTwo}}</li>
+            <li>{{exThree}}</li>
+            <li>{{exFour}}</li>
+            <li>{{exFive}}</li>
+        </ul>
+    </div>
+    {{/each}}
+</div>
+<script src="./js/workout.js"></script>
