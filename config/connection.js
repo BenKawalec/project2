@@ -13,7 +13,6 @@ const sequelize = new Sequelize(
     {
         host: 'localhost',
         dialect: 'mysql',
-        port: 3306
     }
 );
 
