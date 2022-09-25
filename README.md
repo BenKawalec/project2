@@ -24,7 +24,7 @@ As a person working out; I want to be able to create and track workouts; So I ca
 
 ## Deployment
 
-[Workout Tracker on Heroku]
+[Workout Tracker on Heroku](https://workout-tracker-p5.herokuapp.com/)
 
 ## API's Used
 
