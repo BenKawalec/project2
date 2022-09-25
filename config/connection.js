@@ -5,17 +5,10 @@ const Sequelize = require('sequelize');
 require('dotenv').config();
 
 // setting up sequelize object using sequelize instructor imported from the sequelize node module
-const sequelize = new Sequelize(
+module.exports = {
+    HOST: "us-cdbr-east-06.cleardb.net",
+    USER: "bc5ad3e98ffdb4",
+    PASSWORD: "270d519a",
+    DB: "heroku_2216c2050836347"
+  };
 
-    process.env.DB_NAME,
-    process.env.DB_USER,
-    process.env.DB_PASSWORD,
-    {
-        host: 'localhost',
-        dialect: 'mysql',
-        port: 3306
-    }
-);
-
-//exporting our newly created sequelize object
-module.exports = sequelize;
