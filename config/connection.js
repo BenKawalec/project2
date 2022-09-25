@@ -16,12 +16,12 @@ const sequelize = new Sequelize(
         port: 3306
     }
 );
-let cleardb = {
-    HOST: "us-cdbr-east-06.cleardb.net",
-    USER: "bc5ad3e98ffdb4",
-    PASSWORD: "270d519a",
-    DB: "heroku_2216c2050836347"
-  };
+// let cleardb = {
+//     HOST: "us-cdbr-east-06.cleardb.net",
+//     USER: "bc5ad3e98ffdb4",
+//     PASSWORD: "270d519a",
+//     DB: "heroku_2216c2050836347"
+//   };
 
 //exporting our newly created sequelize object
-module.exports = sequelize + cleardb;
+module.exports = sequelize;
