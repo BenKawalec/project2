@@ -1,1 +1,1 @@
-web: node server.js
+web: node --unhandled-rejections=strict server.js
